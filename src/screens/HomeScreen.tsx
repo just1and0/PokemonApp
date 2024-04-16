@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { getPokemons } from '../utils/api';
 import { Pokemon } from '../utils/types';
 import { HomeScreenNavigationProp } from './../utils/navigationTypes';
+import { homeScreenStyles as styles } from '../styles/styles'; 
 
 const HomeScreen: React.FC = () => {
     const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
@@ -50,21 +51,5 @@ const HomeScreen: React.FC = () => {
         </SafeAreaView>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        marginTop: 20,
-    },
-    item: {
-        backgroundColor: '#f9c2ff',
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-    },
-    title: {
-        fontSize: 20,
-    },
-});
 
 export default HomeScreen;
