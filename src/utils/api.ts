@@ -22,3 +22,13 @@ export const getPokemonDetails = async (pokemonName: string): Promise<PokemonDet
         return null;
     }
 };
+
+export const getPokemonDetailsByUrl = async (url: string): Promise<PokemonDetails | null> => {
+    try {
+        const response = await axios.get<PokemonDetails>(url);
+        return response.data;
+    } catch (error) {
+        console.error(`Failed to fetch details from URL ${url}:`, error);
+        return null;
+    }
+};
