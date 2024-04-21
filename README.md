@@ -2,6 +2,14 @@
 
 PokeApp is a mobile application built with React Native, utilizing the Pokémon API to display a list of Pokémon and their detailed statistics. This app demonstrates the use of modern mobile development techniques and libraries including React Navigation and Axios for API integration.
 
+## Preview
+
+<p align="center">
+  <img src="image/homescreen.png" alt="Home Screen" width="30%" />
+  <img src="image/Detailsscreen.png" alt="Details Screen" width="30%" />
+  <img src="image/demo.gif" alt="App Interaction GIF" width="30%" />
+</p>
+
 ## Features
 
 - **List of Pokémon**: Users can browse a list of Pokémon, loaded dynamically from the Pokémon API.
@@ -9,15 +17,7 @@ PokeApp is a mobile application built with React Native, utilizing the Pokémon 
 - **Search and Pagination**: Includes features like searching for Pokémon and infinite scrolling pagination.
 - **Cross-Platform**: Compatible with both iOS and Android devices.
 
-## Preview
 
-
-
-<p align="center">
-  <img src="image/homescreen.png" alt="Home Screen" width="30%" />
-  <img src="image/Detailsscreen.png" alt="Details Screen" width="30%" />
-  <img src="image/demo.gif" alt="App Interaction GIF" width="30%" />
-</p>
 
 ## Getting Started
 
@@ -64,3 +64,19 @@ A step-by-step series of examples that tell you how to get a development environ
 - React Navigation: Manages navigation between different screens.
 - Axios: Handles API requests.
 - Jest: For unit testing.
+
+### Project Structure
+ 
+1. **Clone the repository:**
+   ```lua
+   PokeApp/
+   |-- src/
+   |   |-- screens/
+   |   |   |-- HomeScreen.tsx
+   |   |   `-- DetailScreen.tsx
+   |   `-- utils/
+   |       |-- api.ts
+   |       `-- types.ts
+   |-- App.tsx
+   |-- AppNavigator.tsx
+   `-- README.md
